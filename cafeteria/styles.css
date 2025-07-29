@@ -183,7 +183,7 @@ section {
     z-index: 4;
     position: fixed;
     top: 50%;
-    left: -30%;
+    left: -90%;
     transform: translate(-50%, -50%); 
     transition: left 1s linear;   
 }
@@ -197,4 +197,129 @@ section {
     background: linear-gradient(109deg,rgba(10,12,16,0.99) 15%, rgba(10,12,16,0.7) 50%, rgba(10,12,16,0.99) 85%);
 
 
+}
+
+/* === Responsividade para telas grandes (até 1200px) === */
+@media (max-width: 1200px) {
+  :root {
+    font-size: 9px;
+  }
+
+  .header section {
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .caixa-principal div h3 {
+    font-size: 4.5rem;
+  }
+}
+
+/* === Tablets (até 992px) === */
+@media (max-width: 992px) {
+  :root {
+    font-size: 8.5px;
+  }
+
+  .header section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header section nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .caixa-sobre .sobre-container {
+    flex-direction: column;
+  }
+
+  .caixa-sobre .sobre-container .sobre-imagem,
+  .caixa-sobre .sobre-container .sobre-texto {
+    flex: 1 1 100%;
+  }
+
+  .caixa-principal {
+    text-align: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .caixa-principal div h3 {
+    font-size: 4rem;
+  }
+
+  .caixa-principal div p {
+    font-size: 1.8rem;
+  }
+}
+
+/* === Celulares (até 768px) === */
+@media (max-width: 768px) {
+  :root {
+    font-size: 8px;
+  }
+
+  .header section nav a {
+    font-size: 1.6rem;
+  }
+
+  .caixa-principal div h3 {
+    font-size: 3rem;
+  }
+
+  .caixa-principal div p {
+    font-size: 1.6rem;
+  }
+
+  .botao-link {
+    font-size: 1.5rem;
+    padding: 0.8rem 2.5rem;
+  }
+
+  .titulo {
+    font-size: 3rem;
+  }
+
+  .caixa-sobre .sobre-container .sobre-texto h3 {
+    font-size: 2.4rem;
+  }
+
+  .caixa-sobre .sobre-container .sobre-texto p {
+    font-size: 1.4rem;
+  }
+
+  .modal {
+    width: 90%;
+    left: -90%;
+  }
+}
+
+/* === Celulares muito pequenos (até 480px) === */
+@media (max-width: 480px) {
+  :root {
+    font-size: 7.5px;
+  }
+
+  .caixa-principal div h3 {
+    font-size: 2.5rem;
+  }
+
+  .caixa-principal div p {
+    font-size: 1.4rem;
+  }
+
+  .titulo {
+    font-size: 2.5rem;
+  }
+
+  .header section {
+    padding: 1rem;
+  }
+
+  .header section nav a {
+    font-size: 1.5rem;
+  }
 }
