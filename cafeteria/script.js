@@ -5,7 +5,7 @@ function clicou() {
     mascara.style.visibility = "visible";
 }
 
-function escondermodal() {
+function escondermodal(){
     modal.style.left = "-90%";
     mascara.style.visibility = "hidden";
 }
